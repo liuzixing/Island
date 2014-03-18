@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{954836C7-976F-984F-7DCC-5995D987F212}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_5;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_ANDROID;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_WEBCAM;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Animator.cs" />
+     <Compile Include="Assets\Scripts\CoconutThrower.cs" />
+     <Compile Include="Assets\Scripts\CoconutWin.cs" />
+     <Compile Include="Assets\Scripts\DoorManager.cs" />
+     <Compile Include="Assets\Scripts\Fader.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\MainMenuBtns.cs" />
+     <Compile Include="Assets\Scripts\MainMenuGUI.cs" />
+     <Compile Include="Assets\Scripts\Matches.cs" />
+     <Compile Include="Assets\Scripts\PlayCollisions.cs" />
+     <Compile Include="Assets\Scripts\PowerCell.cs" />
+     <Compile Include="Assets\Scripts\Reloader.cs" />
+     <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\TargetCollision.cs" />
+     <Compile Include="Assets\Scripts\TestHints.cs" />
+     <Compile Include="Assets\Scripts\ThrowTrigger.cs" />
+     <Compile Include="Assets\Scripts\TidyObject.cs" />
+     <Compile Include="Assets\Scripts\Tipstrigger1.cs" />
+     <Compile Include="Assets\Scripts\Tipstrigger2.cs" />
+     <Compile Include="Assets\Scripts\Tipstrigger3.cs" />
+     <Compile Include="Assets\Scripts\TriggerZone.cs" />
+     <Compile Include="Assets\Scripts\WinGame.cs" />
+     <Compile Include="Assets\Scripts\fadeWhite.cs" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{9F538917-A109-B0A6-5A89-0B204792AA1C}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
